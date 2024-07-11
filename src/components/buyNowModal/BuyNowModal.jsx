@@ -15,7 +15,7 @@ const BuyNowModal = ({ addressInfo, setAddressInfo, buyNowFunction }) => {
             <Button
                 type="button"
                 onClick={handleOpen}
-                className="w-full px-4 py-3 text-center text-gray-100 bg-pink-600 border border-transparent dark:border-gray-700 hover:border-pink-500 hover:text-pink-700 hover:bg-pink-100 rounded-xl"
+                className="w-full px-4 py-3 text-center text-gray-100 bg-orange-900 border border-transparent dark:border-gray-700 hover:border-orange-700 hover:text-orange-900 hover:bg-orange-300 rounded-xl"
             >
                 Buy now
             </Button>
