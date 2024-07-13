@@ -4,36 +4,16 @@ import { useNavigate } from "react-router";
 const category = [
     {
         image: 'https://cdn-icons-png.flaticon.com/256/4359/4359963.png',
-        name: 'fashion'
+        name: 'foreign'
     },
     {
         image: 'https://cdn-icons-png.flaticon.com/256/11833/11833323.png',
-        name: 'shirt'
+        name: 'delivery'
     },
     {
         image: 'https://cdn-icons-png.flaticon.com/256/8174/8174424.png',
-        name: 'jacket'
+        name: 'takeaway'
     },
-    {
-        image: 'https://cdn-icons-png.flaticon.com/256/7648/7648246.png',
-        name: 'mobile'
-    },
-    {
-        image: 'https://cdn-icons-png.flaticon.com/256/12142/12142416.png',
-        name: 'laptop'
-    },
-    {
-        image: 'https://cdn-icons-png.flaticon.com/256/10686/10686553.png',
-        name: 'shoes'
-    },
-    {
-        image: 'https://cdn-icons-png.flaticon.com/256/12114/12114279.png',
-        name: 'home'
-    },
-    {
-        image: 'https://cdn-icons-png.flaticon.com/256/11946/11946316.png',
-        name: 'books'
-    }
 ]
 
 const Category = () => {
@@ -51,7 +31,7 @@ const Category = () => {
                             return (
                                 <div key={index} className="px-3 lg:px-10">
                                     {/* Image  */}
-                                    <div onClick={() => navigate(`/category/${item.name}`)} className=" w-16 h-16 lg:w-24 lg:h-24 max-w-xs rounded-full  bg-orange-500 transition-all hover:bg-pink-400 cursor-pointer mb-1 " >
+                                    <div onClick={() => navigate(`/category/${item.name}`)} className=" w-30 h-30 lg:w-40 lg:h-40 max-w-xl rounded-full  bg-orange-500 transition-all hover:bg-orange-900 cursor-pointer mb-1 " >
                                         <div className="flex justify-center mb-12">
                                             {/* Image tag  */}
                                             <img src={item.image} alt="img" />
@@ -59,7 +39,7 @@ const Category = () => {
                                     </div>
 
                                     {/* Name Text  */}
-                                    <h1 className=' text-sm lg:text-lg text-center font-medium title-font first-letter:uppercase '>{item.name}</h1>
+                                    <h1 className=' text-md lg:text-xl text-center font-medium title-font first-letter:uppercase '>{item.name}</h1>
                                 </div>
                             )
                         })}
